@@ -1,0 +1,16 @@
+{
+  "name": "praticajs",
+  "version": "1.0.0",
+  "description": "Son practicas para aprender Js",
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "license": "MIT",
+  "author": "Lancast",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}

@@ -1,0 +1,6 @@
+- **SI** el usuario pide "crear una skill" o "nueva herramienta":
+  -> DELEGAR A: `SkillFactory.js`
+  -> ACCIÓN: Ejecutar en terminal `node src/agents/SkillFactory.js [nombre] "[descripcion]"`
+- **SI** el usuario pide "LectorLogs":
+  -> DELEGAR A: `LectorLogsSkill.js`
+  -> REGLAS DE USO: [.agent/workflows/verify-skills.md](.agent/workflows/verify-skills.md)

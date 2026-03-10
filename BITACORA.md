@@ -10,3 +10,5 @@
 
 ## [2026-03-08 14:39:18] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: init
 
+## [2026-03-09 18:28:52] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas directas de skill
+

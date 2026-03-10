@@ -64,7 +64,18 @@ export const run = async (p = {}) => {
         }
 
         // 3. Agregar el nuevo commit
-        await appendFile(bitacoraPath, nuevaEntrada, 'utf8');
+        if (!bitacoraContent) {
+            bitacoraContent = '# Bitácora de Commits\n\n';
+        } else if (!bitacoraContent.includes('# Bitácora de Commits')) {
+            bitacoraContent = '# Bitácora de Commits\n\n' + bitacoraContent;
+        }
+
+        bitacoraContent = bitacoraContent.replace(
+            /# Bitácora de Commits\s*/,
+            `# Bitácora de Commits\n\n${nuevaEntrada.trim()}\n\n`
+        );
+
+        await fs.promises.writeFile(bitacoraPath, bitacoraContent, 'utf8');
 
         return {
             success: true,

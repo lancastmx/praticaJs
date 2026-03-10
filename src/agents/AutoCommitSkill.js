@@ -13,17 +13,20 @@ export const run = async (p = {}) => {
         console.log("Ejecutando `git add .`...");
         await execAsync('git add .');
 
-        // 2. Obtener estado
+        // 2. Obtener estado ignorando BITACORA.md
         const { stdout: diffOut } = await execAsync('git diff --cached --name-only');
-        const archivos = diffOut.trim().split('\n').filter(Boolean);
+        const archivos = diffOut.trim().split('\n').filter(Boolean).filter(a => a !== 'BITACORA.md');
 
         if (archivos.length === 0) {
-            throw new Error("No se puede hacer commit: no hay archivos en el área de staging.");
+            throw new Error("No se puede hacer commit: no hay archivos relevantes en el área de staging (excluyendo BITACORA.md).");
         }
 
         // 3. Análisis Real de Contenido
-        const { stdout: diffUnified } = await execAsync('git diff --cached --unified=0');
-        const lineasAgregadas = diffUnified.split('\n').filter(line => line.startsWith('+') && !line.startsWith('+++'));
+        let lineasAgregadas = [];
+        if (archivos.length > 0) {
+            const { stdout: diffFiles } = await execAsync(`git diff --cached --unified=0 -- ${archivos.join(' ')}`);
+            lineasAgregadas = diffFiles.split('\n').filter(line => line.startsWith('+') && !line.startsWith('+++'));
+        }
 
         // Mapeos explícitos
         const acciones = [];
@@ -80,20 +83,29 @@ export const run = async (p = {}) => {
         console.log("Mensaje de commit generado:");
         console.log(mensajeGenerado);
 
-        // 5. Hacer commit
-        console.log("Ejecutando `git commit`...");
-        const mensajeSeguro = mensajeGenerado.replace(/"/g, '\\"');
+        // 4. Registro: Invocar a RegistradorCommitSkill ANTES del commit real
+        if (p.forceRewrite) {
+            console.log("Ejecutando limpieza profunda de bitácora (forceRewrite)...");
+            await runRegistrador({ forceRewrite: true });
+        }
+
+        console.log("Añadiendo el mensaje a BITACORA.md...");
+        const registroResultado = await runRegistrador({ mensajeGenerado });
+
+        // 5. Commit Total
+        console.log("Ejecutando `git add .` final y `git commit`...");
+        await execAsync('git add .'); // Asegurarnos de añadir los cambios de BITACORA.md
+
+        const mensajeFinal = `${mensajeGenerado}; actualiza BITACORA.md`;
+        const mensajeSeguro = mensajeFinal.replace(/"/g, '\\"');
         await execAsync(`git commit -m "${mensajeSeguro}"`);
 
-        console.log("Commit realizado. Registrando bitácora...");
-
-        // 5. Invocar obligatoriamente RegistradorCommitSkill
-        const registroResultado = await runRegistrador({ forceRewrite: p.forceRewrite || false });
+        console.log("Commit finalizado con éxito.");
 
         return {
             success: true,
             data: {
-                mensajeGenerado,
+                mensajeGenerado: mensajeFinal,
                 registro: registroResultado
             }
         };

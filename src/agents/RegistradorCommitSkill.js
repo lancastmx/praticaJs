@@ -92,17 +92,31 @@ export const run = async (p = {}) => {
         }
 
         // MODO INCREMENTAL
-        // 1. Obtener el último commit
-        const { stdout } = await execAsync(`git log -1 --format="${logFormat}" --date=format:"%Y-%m-%d %H:%M:%S"`);
-        const lines = stdout.trim().split('\n');
+        let autor, fecha, mensaje;
 
-        if (lines.length < 3) {
-            return { success: false, error: "No commit message found." };
+        if (p.mensajeGenerado) {
+            const { stdout: nameOut } = await execAsync('git config user.name');
+            const { stdout: emailOut } = await execAsync('git config user.email');
+            autor = `${nameOut.trim()} <${emailOut.trim()}>`;
+
+            const now = new Date();
+            const pad = n => n.toString().padStart(2, '0');
+            fecha = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+            mensaje = p.mensajeGenerado;
+        } else {
+            // 1. Obtener el último commit
+            const { stdout } = await execAsync(`git log -1 --format="${logFormat}" --date=format:"%Y-%m-%d %H:%M:%S"`);
+            const lines = stdout.trim().split('\n');
+
+            if (lines.length < 3) {
+                return { success: false, error: "No commit message found." };
+            }
+
+            autor = lines[0];
+            fecha = lines[1];
+            mensaje = lines.slice(2).join('\n').trim();
         }
 
-        const autor = lines[0];
-        const fecha = lines[1];
-        const mensaje = lines.slice(2).join('\n').trim();
         const nuevaEntrada = `## [${fecha}] | Autor: ${autor} | Mensaje: ${mensaje}\n\n`;
 
         // 2. Comprobar si ya existe

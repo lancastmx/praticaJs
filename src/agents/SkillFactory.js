@@ -75,6 +75,7 @@ El Orquestador debe enviar:
 {
   "action": "execute",
   "entryPoint": "src/agents/${skillName}Skill.js",
+  "function": "run",
   "params": {}
 }
 \`\`\`

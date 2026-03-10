@@ -21,6 +21,7 @@ El Orquestador debe enviar:
 {
   "action": "execute",
   "entryPoint": "src/agents/AutoCommitSkill.js",
+  "function": "run",
   "params": {}
 }
 ```

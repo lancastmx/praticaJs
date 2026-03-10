@@ -19,7 +19,7 @@ Este proceso valida que la inteligencia del agente (.agent/skills) tenga "múscu
   - ACCIÓN: Notificar al usuario: "⚠️ Error Crítico: No se encuentra la dependencia [Ruta]. Reinstalando vía SkillFactory..."
   - PROHIBICIÓN: No intentes simular la funcionalidad si el archivo no existe físicamente.
 
-## 🚫 Constraints
+## 🔒 Workflow de Seguridad
 - No modifiques archivos dentro de `src/core` sin permiso.
 - Solo usa `scripts/documentador.js` para escribir logs.
-- **Queda estrictamente prohibido ejecutar archivos que empiecen con `test-` para realizar tareas de producción como commits o registros.**
+- **PROHIBICIÓN ESTRICTA:** Queda terminantemente prohibido usar o ejecutar archivos de prueba (aquellos que empiezan con `test-`) para realizar tareas de producción, registrar acciones reales, o hacer commits. Los archivos de test son *solo* para validación y sandbox.

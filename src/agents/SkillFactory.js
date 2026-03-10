@@ -46,8 +46,10 @@ run({ test: true }).then(res => {
         fs.writeFileSync(paths.test, testContent);
 
         // Auto-registro en AGENTS.md
-        const regla = `\n- **SI** pide "${skillName}": -> DELEGAR A: \`${skillName}Skill.js\` -> REGLAS DE USO: [.agent/workflows/verify-skills.md](.agent/workflows/verify-skills.md)`;
-        fs.appendFileSync(agentsPath, regla);
+        const regla = `\n- **SI** pide "${skillName}": -> DELEGAR A: \`${skillName}Skill.js\` -> REGLAS DE USO: [.agent/skills/${skillName}.md](.agent/skills/${skillName}.md)`;
+        if (!fs.existsSync(agentsPath) || !fs.readFileSync(agentsPath, 'utf8').includes(`- **SI** pide "${skillName}":`)) {
+            fs.appendFileSync(agentsPath, regla);
+        }
 
         console.log(`✅ Skill [${skillName}] creada, registrada y con test listo.`);
     } catch (e) { console.error("Error:", e.message); }

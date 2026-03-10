@@ -1,5 +1,13 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: d9c4844] | 9/3/2026, 8:23:13 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Añade función: regla()
+  - Sin nuevas secciones Markdown
+- **Archivos:** AGENTS.md, src/agents/SkillFactory.js
+
+---
 ## 🛠️ [ID: ff23bf7] | 9/3/2026, 8:00:10 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**

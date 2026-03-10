@@ -3,7 +3,7 @@
   -> ACCIÓN: Ejecutar en terminal `node src/agents/SkillFactory.js [nombre] "[descripcion]"`
 - **SI** el usuario pide "LectorLogs":
   -> DELEGAR A: `LectorLogsSkill.js`
-  -> REGLAS DE USO: [.agent/workflows/verify-skills.md](.agent/workflows/verify-skills.md)
-- **SI** pide "BuscadorTodos": -> DELEGAR A: `BuscadorTodosSkill.js` -> REGLAS DE USO: [.agent/workflows/verify-skills.md] -> VER: (.agent/skills/BuscadorTodos.md)
-- **SI** pide "RegistradorCommit": -> DELEGAR A: `RegistradorCommitSkill.js` -> REGLAS DE USO: [.agent/workflows/verify-skills.md] -> VER: (.agent/skills/RegistradorCommit.md)
-- **SI** pide "AutoCommit": -> DELEGAR A: `AutoCommitSkill.js` -> REGLAS DE USO: [.agent/workflows/verify-skills.md](.agent/workflows/verify-skills.md)
+  -> REGLAS DE USO: [.agent/skills/LectorLogs.md](.agent/skills/LectorLogs.md)
+- **SI** pide "BuscadorTodos": -> DELEGAR A: `BuscadorTodosSkill.js` -> REGLAS DE USO: [.agent/skills/BuscadorTodos.md](.agent/skills/BuscadorTodos.md)
+- **SI** pide "RegistradorCommit": -> DELEGAR A: `RegistradorCommitSkill.js` -> REGLAS DE USO: [.agent/skills/RegistradorCommit.md](.agent/skills/RegistradorCommit.md)
+- **SI** pide "AutoCommit": -> DELEGAR A: `AutoCommitSkill.js` -> REGLAS DE USO: [.agent/skills/AutoCommit.md](.agent/skills/AutoCommit.md)

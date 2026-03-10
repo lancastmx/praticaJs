@@ -3,15 +3,15 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/CerrarPBISkill.js
+Lógica: agents/CerrarPBISkill.js
 
 Documentación: .agent/skills/CerrarPBI.md
 
-Test: src/agents/test-CerrarPBI.js
+Test: agents/test-CerrarPBI.js
 
 Dependencias: 
 Llama a: 
- - src/agents/AutoCommitSkill.js
+ - agents/AutoCommitSkill.js
  - .agent/skills/AutoCommit.md
 
 ## 🧠 Cuándo aplicar (Trigger)
@@ -23,7 +23,7 @@ El Orquestador debe enviar:
 ```json
 {
   "action": "execute",
-  "entryPoint": "src/agents/CerrarPBISkill.js",
+  "entryPoint": "agents/CerrarPBISkill.js",
   "function": "run",
   "params": {}
 }

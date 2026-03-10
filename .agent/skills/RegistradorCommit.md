@@ -3,11 +3,11 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/RegistradorCommitSkill.js
+Lógica: agents/RegistradorCommitSkill.js
 
 Documentación: .agent/skills/RegistradorCommit.md
 
-Test: src/agents/test-RegistradorCommit.js
+Test: agents/test-RegistradorCommit.js
 
 Dependencias: [Ninguna especial]
 
@@ -21,7 +21,7 @@ El Orquestador debe enviar:
 // Para modo incremental (solo agrega el último commit si no existe)
 {
   "action": "execute",
-  "entryPoint": "src/agents/RegistradorCommitSkill.js",
+  "entryPoint": "agents/RegistradorCommitSkill.js",
   "function": "run",
   "params": {}
 }
@@ -29,7 +29,7 @@ El Orquestador debe enviar:
 // Para modo reescritura total (borra y regenera toda la bitácora desde Git)
 {
   "action": "execute",
-  "entryPoint": "src/agents/RegistradorCommitSkill.js",
+  "entryPoint": "agents/RegistradorCommitSkill.js",
   "function": "run",
   "params": {
     "forceRewrite": true

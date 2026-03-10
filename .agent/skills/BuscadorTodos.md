@@ -3,11 +3,11 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/BuscadorTodosSkill.js
+Lógica: agents/BuscadorTodosSkill.js
 
 Documentación: .agent/skills/BuscadorTodos.md
 
-Test: src/agents/test-BuscadorTodos.js
+Test: agents/test-BuscadorTodos.js
 
 Dependencias: [Ninguna especial]
 
@@ -20,7 +20,7 @@ El Orquestador debe enviar:
 ```json
 {
   "action": "execute",
-  "entryPoint": "src/agents/BuscadorTodosSkill.js",
+  "entryPoint": "agents/BuscadorTodosSkill.js",
   "function": "run",
   "params": {
     "path": "opcional/ruta/relativa"

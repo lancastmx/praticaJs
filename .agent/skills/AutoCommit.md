@@ -3,13 +3,13 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/AutoCommitSkill.js
+Lógica: agents/AutoCommitSkill.js
 
 Documentación: .agent/skills/AutoCommit.md
 
-Test: src/agents/test-AutoCommit.js
+Test: agents/test-AutoCommit.js
 
-Dependencias: Llama a src/agents/RegistradorCommitSkill.js para persistir datos en BITACORA.md.
+Dependencias: Llama a agents/RegistradorCommitSkill.js para persistir datos en BITACORA.md.
 
 ## 🧠 Cuándo aplicar (Trigger)
 - Cuando el usuario solicite explícitamente: "AutoCommit"
@@ -20,7 +20,7 @@ El Orquestador debe enviar:
 ```json
 {
   "action": "execute",
-  "entryPoint": "src/agents/AutoCommitSkill.js",
+  "entryPoint": "agents/AutoCommitSkill.js",
   "function": "run",
   "params": {}
 }

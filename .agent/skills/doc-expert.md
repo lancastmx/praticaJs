@@ -3,11 +3,11 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/doc-expertSkill.js
+Lógica: agents/doc-expertSkill.js
 
 Documentación: .agent/skills/doc-expert.md
 
-Test: src/agents/test-doc-expert.js
+Test: agents/test-doc-expert.js
 
 Dependencias: [Ninguna especial]
 

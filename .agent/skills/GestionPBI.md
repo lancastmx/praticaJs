@@ -3,11 +3,11 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/GestionPBISkill.js
+Lógica: agents/GestionPBISkill.js
 
 Documentación: .agent/skills/GestionPBI.md
 
-Test: src/agents/test-GestionPBI.js
+Test: agents/test-GestionPBI.js
 
 Dependencias: 
 [Ninguna especial]
@@ -21,7 +21,7 @@ El Orquestador debe enviar:
 ```json
 {
   "action": "execute",
-  "entryPoint": "src/agents/GestionPBISkill.js",
+  "entryPoint": "agents/GestionPBISkill.js",
   "function": "run",
   "params": {}
 }

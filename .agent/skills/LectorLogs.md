@@ -3,11 +3,11 @@
 
 ## 📂 Archivos y Activos
 
-Lógica: src/agents/LectorLogsSkill.js
+Lógica: agents/LectorLogsSkill.js
 
 Documentación: .agent/skills/LectorLogs.md
 
-Test: src/agents/test-LectorLogs.js
+Test: agents/test-LectorLogs.js
 
 Dependencias: [Ninguna especial]
 
@@ -19,7 +19,7 @@ El Orquestador debe enviar:
 ```json
 {
   "action": "execute",
-  "entryPoint": "src/agents/LectorLogsSkill.js",
+  "entryPoint": "agents/LectorLogsSkill.js",
   "function": "run",
   "params": {}
 }

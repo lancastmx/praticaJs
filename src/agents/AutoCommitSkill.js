@@ -1,3 +1,4 @@
+// v1.1 - Soporte para mensajes en lenguaje natural.
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import { run as runRegistrador } from './RegistradorCommitSkill.js';

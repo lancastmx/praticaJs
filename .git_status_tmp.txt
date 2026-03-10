@@ -1,0 +1,3 @@
+ M src/agents/AutoCommitSkill.js
+ M src/agents/RegistradorCommitSkill.js
+?? .git_status_tmp.txt

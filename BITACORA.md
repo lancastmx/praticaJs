@@ -1,40 +1,178 @@
-# Bitácora de Commits
+# 📓 BITÁCORA DE INGENIERÍA
 
-## [2026-03-09 19:29:23] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Añade logs en AutoCommitSkill.js; Añade logs en RegistradorCommitSkill.js
+## 🛠️ [ID: PENDIENTE] | 9/3/2026, 7:53:39 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - En `src/agents/AutoCommitSkill.js`: `EXCLUDE`
+  - En `src/agents/AutoCommitSkill.js`: `stagingFilesRaw`
+  - En `src/agents/AutoCommitSkill.js`: `stagingFiles`
+  - En `src/agents/AutoCommitSkill.js`: `diff`
+  - En `src/agents/AutoCommitSkill.js`: `lineasAnadidas`
+  - En `src/agents/AutoCommitSkill.js`: `regexFunciones`
+  - En `src/agents/AutoCommitSkill.js`: `match`
+  - En `src/agents/AutoCommitSkill.js`: `regexTitulos`
+  - En `src/agents/AutoCommitSkill.js`: `match`
+  - En `src/agents/AutoCommitSkill.js`: `funcionesStr`
+  - En `src/agents/AutoCommitSkill.js`: `mdStr`
+  - En `src/agents/AutoCommitSkill.js`: `mensajeCommit`
+  - En `src/agents/AutoCommitSkill.js`: `autor`
+  - En `src/agents/AutoCommitSkill.js`: `commitHash`
+  - En `src/agents/RegistradorCommitSkill.js`: `run`
+  - En `src/agents/RegistradorCommitSkill.js`: `tituloPrincipal`
+  - En `src/agents/RegistradorCommitSkill.js`: `logOut`
+  - En `src/agents/RegistradorCommitSkill.js`: `commits`
+  - En `src/agents/RegistradorCommitSkill.js`: `partes`
+  - En `src/agents/RegistradorCommitSkill.js`: `fecha`
+  - En `src/agents/RegistradorCommitSkill.js`: `filesOut`
+  - En `src/agents/RegistradorCommitSkill.js`: `bloque`
+  - En `src/agents/RegistradorCommitSkill.js`: `fecha`
+  - En `src/agents/RegistradorCommitSkill.js`: `hash`
+  - En `src/agents/RegistradorCommitSkill.js`: `autor`
+  - En `src/agents/RegistradorCommitSkill.js`: `listaDeFuncionesDetectadas`
+  - En `src/agents/RegistradorCommitSkill.js`: `seccionesMarkdownNuevas`
+  - En `src/agents/RegistradorCommitSkill.js`: `listaArchivos`
+  - En `src/agents/RegistradorCommitSkill.js`: `bloque`
+  - Sin nuevas secciones Markdown
+- **Archivos:** .git_status_tmp.txt, run_commit.mjs, src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
-## [2026-03-09 19:13:56] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección ## [2026-03-09 19:13:30] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección ## [2026-03-09 19:10:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js] en AGENTS.md; Agrega sección ## [2026-03-09 19:02:09] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de varios archivos en [BITACORA.md, README.md, AutoCommitSkill.js] en AGENTS.md; Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de AGENTS.md en [AGENTS.md] en AGENTS.md; Agrega sección ## [2026-03-09 18:56:02] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de BITACORA.md en [BITACORA.md] en AGENTS.md; Agrega sección ## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [AutoCommit.md, AGENTS.md, BITACORA.md y 2 más] en AGENTS.md; Agrega sección ## [2026-03-09 19:10:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js] en BITACORA.md; Agrega sección ## [2026-03-09 19:02:09] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de varios archivos en [BITACORA.md, README.md, AutoCommitSkill.js] en BITACORA.md; Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de AGENTS.md en [AGENTS.md] en BITACORA.md; Agrega sección ## [2026-03-09 18:56:02] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de BITACORA.md en [BITACORA.md] en BITACORA.md; Agrega sección ## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [AutoCommit.md, AGENTS.md, BITACORA.md y 2 más] en BITACORA.md; Añade logs en AutoCommitSkill.js en BITACORA.md; Añade logs en RegistradorCommitSkill.js
+---
+## 🛠️ [ID: e598738] | 9/3/2026, 7:46:53 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - feat: src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
+- **Archivos:** src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
-## [2026-03-09 19:13:30] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección ## [2026-03-09 19:10:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js] en AGENTS.md; Agrega sección ## [2026-03-09 19:02:09] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de varios archivos en [BITACORA.md, README.md, AutoCommitSkill.js] en AGENTS.md; Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de AGENTS.md en [AGENTS.md] en AGENTS.md; Agrega sección ## [2026-03-09 18:56:02] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de BITACORA.md en [BITACORA.md] en AGENTS.md; Agrega sección ## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [AutoCommit.md, AGENTS.md, BITACORA.md y 2 más] en AGENTS.md; Agrega sección ## [2026-03-09 19:10:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js] en BITACORA.md; Agrega sección ## [2026-03-09 19:02:09] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de varios archivos en [BITACORA.md, README.md, AutoCommitSkill.js] en BITACORA.md; Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de AGENTS.md en [AGENTS.md] en BITACORA.md; Agrega sección ## [2026-03-09 18:56:02] | Autor: lancast <angelprep92@gmail.com> | Mensaje: docs: Actualiza documentación de BITACORA.md en [BITACORA.md] en BITACORA.md; Agrega sección ## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [AutoCommit.md, AGENTS.md, BITACORA.md y 2 más] en BITACORA.md; Añade logs en AutoCommitSkill.js
+---
+## 🛠️ [ID: e3734ac] | 9/3/2026, 7:29:24 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Añade logs en AutoCommitSkill.js; Añade logs en RegistradorCommitSkill.js; actualiza BITACORA.md
+- **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
-## [2026-03-09 19:10:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js]
+---
+## 🛠️ [ID: 6c9b208] | 9/3/2026, 7:13:56 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Agrega sección ## [2026-03-09 19:13:30] 
+- **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js
 
-## [2026-03-09 19:09:44] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: Añade logs de depuración en [BITACORA.md, AutoCommitSkill.js]
+---
+## 🛠️ [ID: 2dd1972] | 9/3/2026, 7:13:30 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Agrega sección ## [2026-03-09 19:10:26] 
+- **Archivos:** AGENTS.md, BITACORA.md, src/agents/AutoCommitSkill.js
 
-## [2026-03-09 19:06:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: [BITACORA.md, AutoCommitSkill.js, test-AutoCommit.js] y cambios relacionados
+---
+## 🛠️ [ID: afd9890] | 9/3/2026, 7:10:26 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js]
+- **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js
 
-## [2026-03-09 19:02:09] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: actualización automática en BITACORA.md; Agrega sección ## Estándar de Skills en BITACORA.md; Agrega sección ## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: actualización automática en README.md; Agrega sección ## Estándar de Skills en README.md; Modifica lógica en AutoCommitSkill.js
+---
+## 🛠️ [ID: 3c15c00] | 9/3/2026, 7:09:44 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: Añade logs de depuración en [BITACORA.md, AutoCommitSkill.js]
+- **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js
 
-## [2026-03-09 18:59:26] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Edita contenido en AGENTS.md
+---
+## 🛠️ [ID: 6d9e945] | 9/3/2026, 7:06:19 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fix: [BITACORA.md, AutoCommitSkill.js, test-AutoCommit.js] y cambios relacionados
+- **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/test-AutoCommit.js
 
-## [2026-03-09 18:56:50] | Autor: lancast <angelprep92@gmail.com> | Mensaje: se le escapo 1
+---
+## 🛠️ [ID: c3da695] | 9/3/2026, 7:02:09 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: actualización automática
+- **Archivos:** BITACORA.md, README.md, src/agents/AutoCommitSkill.js
 
-## [2026-03-09 18:56:02] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección ## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: chore: actualización automática en BITACORA.md
+---
+## 🛠️ [ID: a2ae165] | 9/3/2026, 6:59:26 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: actualización automática
+- **Archivos:** AGENTS.md
 
-## [2026-03-09 18:53:19] | Autor: lancast <angelprep92@gmail.com> | Mensaje: Agrega sección # Skill: AutoCommit en AutoCommit.md; Agrega sección ## 🧠 Cuándo aplicar (Trigger) en AutoCommit.md; Agrega sección ## ⚙️ Cómo aplicar (Payload) en AutoCommit.md; Agrega sección ## [2026-03-09 18:40:24] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: ajuste en el formato de bitacora en AutoCommit.md; Agrega sección ## [2026-03-09 18:28:52] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas directas de skill en AutoCommit.md; Agrega sección ## [2026-03-09 18:23:17] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: Bitagora de commit en AutoCommit.md; Agrega sección # Skill: AutoCommit en AGENTS.md; Agrega sección ## 🧠 Cuándo aplicar (Trigger) en AGENTS.md; Agrega sección ## ⚙️ Cómo aplicar (Payload) en AGENTS.md; Agrega sección ## [2026-03-09 18:40:24] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: ajuste en el formato de bitacora en AGENTS.md; Agrega sección ## [2026-03-09 18:28:52] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas directas de skill en AGENTS.md; Agrega sección ## [2026-03-09 18:23:17] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: Bitagora de commit en AGENTS.md; Agrega sección # Skill: AutoCommit en BITACORA.md; Agrega sección ## 🧠 Cuándo aplicar (Trigger) en BITACORA.md; Agrega sección ## ⚙️ Cómo aplicar (Payload) en BITACORA.md; Agrega sección ## [2026-03-09 18:40:24] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: ajuste en el formato de bitacora en BITACORA.md; Agrega sección ## [2026-03-09 18:28:52] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas directas de skill en BITACORA.md; Agrega sección ## [2026-03-09 18:23:17] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: Bitagora de commit en BITACORA.md; Añade función run() en AutoCommitSkill.js; Añade función run() en test-AutoCommit.js
+---
+## 🛠️ [ID: eff75e3] | 9/3/2026, 6:56:50 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - se le escapo 1
+- **Archivos:** BITACORA.md
 
-## [2026-03-09 18:40:24] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: ajuste en el formato de bitacora
+---
+## 🛠️ [ID: fe61e7c] | 9/3/2026, 6:56:02 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: actualización automática
+- **Archivos:** BITACORA.md
 
-## [2026-03-09 18:28:52] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas directas de skill
+---
+## 🛠️ [ID: 80efdc9] | 9/3/2026, 6:53:19 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - chore: actualización automática
+- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/test-AutoCommit.js
 
-## [2026-03-09 18:23:17] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: Bitagora de commit
+---
+## 🛠️ [ID: 8eda5ae] | 9/3/2026, 6:40:24 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fix: ajuste en el formato de bitacora
+- **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js, src/agents/SkillFactory.js
 
-## [2026-03-09 17:57:27] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fead: new skill listar TODO
+---
+## 🛠️ [ID: 53652c4] | 9/3/2026, 6:28:52 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fix: rutas directas de skill
+- **Archivos:** AGENTS.md, src/agents/SkillFactory.js
 
-## [2026-03-09 17:39:05] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas y logica de los skill.
+---
+## 🛠️ [ID: 7c584cd] | 9/3/2026, 6:23:17 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - feat: Bitagora de commit
+- **Archivos:** .agent/skills/RegistradorCommit.md, AGENTS.md, BITACORA.md, src/agents/RegistradorCommitSkill.js, src/agents/test-RegistradorCommit.js
 
-## [2026-03-09 17:22:31] | Autor: lancast <angelprep92@gmail.com> | Mensaje: fix: rutas y logica del lector de consol.log
+---
+## 🛠️ [ID: 304dfe2] | 9/3/2026, 5:57:27 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fead: new skill listar TODO
+- **Archivos:** .agent/skills/BuscadorTodos.md, AGENTS.md, TODOS.md, src/agents/BuscadorTodosSkill.js, src/agents/SkillFactory.js, src/agents/test-BuscadorTodos.js, src/index.js, src/test.js
 
-## [2026-03-09 17:14:23] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: add creat skill
+---
+## 🛠️ [ID: d0d0680] | 9/3/2026, 5:39:05 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fix: rutas y logica de los skill.
+- **Archivos:** .agent/workflows/create-skill.md, src/agents/SkillFactory.js
 
-## [2026-03-08 14:39:18] | Autor: lancast <angelprep92@gmail.com> | Mensaje: feat: init
+---
+## 🛠️ [ID: 3ab9031] | 9/3/2026, 5:22:31 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - fix: rutas y logica del lector de consol.log
+- **Archivos:** src/agents/LectorLogsSkill.js, src/agents/SkillFactory.js
 
+---
+## 🛠️ [ID: 0cf4ba2] | 9/3/2026, 5:14:23 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - feat: add creat skill
+- **Archivos:** .agent/skills/LectorLogs.md, .agent/skills/doc-expert.md, .agent/workflows/create-skill.md, .agent/workflows/verify-skills.md, AGENTS.md, src/agents/LectorLogsSkill.js, src/agents/SkillFactory.js, src/index.js
+
+---
+## 🛠️ [ID: 75951be] | 8/3/2026, 2:39:18 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - feat: init
+- **Archivos:** package.json
+
+---

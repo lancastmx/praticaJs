@@ -14,59 +14,48 @@ export const run = async (p = {}) => {
         await execAsync('git add .');
 
         // 2. Obtener estado
-        const { stdout: statusOut } = await execAsync('git status --short');
-        if (!statusOut.trim()) {
-            return { success: true, message: "No hay cambios para hacer commit." };
+        const { stdout: diffOut } = await execAsync('git diff --cached --name-only');
+        const archivos = diffOut.trim().split('\n').filter(Boolean);
+
+        if (archivos.length === 0) {
+            throw new Error("No se puede hacer commit: no hay archivos en el área de staging.");
         }
-
-        // Parseamos los archivos modificados
-        const lineas = statusOut.trim().split('\n');
-        const archivosaAgregados = [];
-        const archivosModificados = [];
-        const archivosEliminados = [];
-
-        lineas.forEach(linea => {
-            const estado = linea.substring(0, 2).trim();
-            const archivo = linea.substring(3).trim();
-            if (estado.includes('A') || estado === '??') archivosaAgregados.push(archivo);
-            else if (estado.includes('M')) archivosModificados.push(archivo);
-            else if (estado.includes('D')) archivosEliminados.push(archivo);
-        });
 
         // 3. Generar mensaje descriptivo
-        let mensajeGenerado = "chore: actualización automática\n\n";
-
-        if (archivosaAgregados.length > 0) {
-            mensajeGenerado += `- Archivos añadidos: ${archivosaAgregados.map(f => f.split('/').pop()).join(', ')}\n`;
-        }
-        if (archivosModificados.length > 0) {
-            mensajeGenerado += `- Archivos modificados: ${archivosModificados.map(f => f.split('/').pop()).join(', ')}\n`;
-        }
-        if (archivosEliminados.length > 0) {
-            mensajeGenerado += `- Archivos eliminados: ${archivosEliminados.map(f => f.split('/').pop()).join(', ')}\n`;
+        const archivosNombres = archivos.map(f => f.split('/').pop());
+        const maxFiles = 3;
+        let listaNombres = archivosNombres.slice(0, maxFiles).join(', ');
+        if (archivosNombres.length > maxFiles) {
+            listaNombres += ` y ${archivosNombres.length - maxFiles} más`;
         }
 
-        // Agregar información de diff para mayor detalle
-        try {
-            const { stdout: diffOut } = await execAsync('git diff --cached --stat');
-            mensajeGenerado += `\nDetalles del diff:\n${diffOut.trim()}`;
-        } catch (e) {
-            console.log("No se pudo obtener el dif, continuando...");
+        // Determinar un prefijo básico
+        let tipo = "update";
+        if (archivos.some(a => a.toLowerCase().includes('fix') || a.endsWith('Skill.js'))) {
+            tipo = "fix";
+        } else if (archivos.every(a => a.endsWith('.md'))) {
+            tipo = "docs";
         }
+
+        // En caso de no poder determinar los archivos modificados correctamente
+        if (!listaNombres) {
+            throw new Error("No se pudo determinar el cambio: nombre de archivos inválidos.");
+        }
+
+        let mensajeGenerado = `${tipo}: [${listaNombres}] y cambios relacionados`;
 
         console.log("Mensaje de commit generado:");
         console.log(mensajeGenerado);
 
         // 4. Hacer commit
         console.log("Ejecutando `git commit`...");
-        // Reemplazar comillas dobles en el mensaje para evitar romper el comando
         const mensajeSeguro = mensajeGenerado.replace(/"/g, '\\"');
         await execAsync(`git commit -m "${mensajeSeguro}"`);
 
         console.log("Commit realizado. Registrando bitácora...");
 
         // 5. Invocar obligatoriamente RegistradorCommitSkill
-        const registroResultado = await runRegistrador({ forceRewrite: false });
+        const registroResultado = await runRegistrador({ forceRewrite: p.forceRewrite || false });
 
         return {
             success: true,

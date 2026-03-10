@@ -1,5 +1,22 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: 73c269f] | 9/3/2026, 10:13:33 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Añade función: run()
+  - Añade función: nombre()
+  - Añade función: descripcion()
+  - Añade función: ramaPBI()
+  - Añade función: pbiPath()
+  - Añade función: pbiContent()
+  - Añade función: commitResult()
+  - Añade sección: Skill: GestionPBI
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: 🧠 Cuándo aplicar (Trigger)
+  - Añade sección: ⚙️ Cómo aplicar (Payload)
+- **Archivos:** .agent/skills/GestionPBI.md, AGENTS.md, src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
+
+---
 ## 🛠️ [ID: 6b9af90] | 9/3/2026, 9:04:38 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**

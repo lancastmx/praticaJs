@@ -10,3 +10,4 @@
 - **SI** pide "RegistradorCommit": -> DELEGAR A: `RegistradorCommitSkill.js` -> REGLAS DE USO: [.agent/skills/RegistradorCommit.md](.agent/skills/RegistradorCommit.md)
 - **SI** pide "AutoCommit": -> DELEGAR A: `AutoCommitSkill.js` -> REGLAS DE USO: [.agent/skills/AutoCommit.md](.agent/skills/AutoCommit.md)
 - **SI** pide "doc-expert": -> DELEGAR A: `doc-expertSkill.js` -> REGLAS DE USO: [.agent/skills/doc-expert.md](.agent/skills/doc-expert.md)
+- **SI** pide "GestionPBI": -> DELEGAR A: `GestionPBISkill.js` -> REGLAS DE USO: [.agent/skills/GestionPBI.md](.agent/skills/GestionPBI.md)

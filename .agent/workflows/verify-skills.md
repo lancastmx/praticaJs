@@ -22,3 +22,4 @@ Este proceso valida que la inteligencia del agente (.agent/skills) tenga "múscu
 ## 🚫 Constraints
 - No modifiques archivos dentro de `src/core` sin permiso.
 - Solo usa `scripts/documentador.js` para escribir logs.
+- **Queda estrictamente prohibido ejecutar archivos que empiecen con `test-` para realizar tareas de producción como commits o registros.**

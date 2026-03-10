@@ -20,3 +20,5 @@ El Orquestador debe enviar:
 ```json
 { "action": "execute", "params": {} }
 ```
+
+> **⚠️ OBLIGATORIO:** No invoques `test-AutoCommit.js`. Este skill debe ser llamado directamente importando e invocando la función `run()` desde `src/agents/AutoCommitSkill.js`.

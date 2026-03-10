@@ -20,6 +20,16 @@ const createSkill = () => {
 # Skill: ${skillName}
 > ${description}
 
+## 📂 Archivos y Activos
+
+Lógica: src/agents/${skillName}Skill.js
+
+Documentación: .agent/skills/${skillName}.md
+
+Test: src/agents/test-${skillName}.js
+
+Dependencias: [Lista aquí si la skill llama a otras, como RegistradorCommitSkill]
+
 ## 🧠 Cuándo aplicar (Trigger)
 - Cuando el usuario solicite explícitamente: "${skillName}"
 - Ante la necesidad de: ${description}
@@ -33,20 +43,20 @@ El Orquestador debe enviar:
 
     // SCRIPT DE PRUEBA INSTANTÁNEA
     const testContent = `
-import { run } from './${skillName}Skill.js';
-console.time('Test-${skillName}');
-run({ test: true }).then(res => {
-    console.log("Resultado:", res);
-    console.timeEnd('Test-${skillName}');
-});`.trim();
+    import { run } from './${skillName}Skill.js';
+    console.time('Test-${skillName}');
+    run({ test: true }).then(res => {
+        console.log("Resultado:", res);
+        console.timeEnd('Test-${skillName}');
+    }); `.trim();
 
     try {
-        fs.writeFileSync(paths.js, `export const run = async (p) => ({ success: true, data: p });`);
+        fs.writeFileSync(paths.js, `export const run = async (p) => ({ success: true, data: p }); `);
         fs.writeFileSync(paths.md, mdContent);
         fs.writeFileSync(paths.test, testContent);
 
         // Auto-registro en AGENTS.md
-        const regla = `\n- **SI** pide "${skillName}": -> DELEGAR A: \`${skillName}Skill.js\` -> REGLAS DE USO: [.agent/skills/${skillName}.md](.agent/skills/${skillName}.md)`;
+        const regla = `\n - ** SI ** pide "${skillName}": -> DELEGAR A: \`${skillName}Skill.js\` -> REGLAS DE USO: [.agent/skills/${skillName}.md](.agent/skills/${skillName}.md)`;
         if (!fs.existsSync(agentsPath) || !fs.readFileSync(agentsPath, 'utf8').includes(`- **SI** pide "${skillName}":`)) {
             fs.appendFileSync(agentsPath, regla);
         }

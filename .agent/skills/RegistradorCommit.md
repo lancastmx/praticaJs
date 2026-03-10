@@ -1,6 +1,16 @@
 # Skill: RegistradorCommit
 > Registra los commits de Git en un archivo llamado BITACORA.md. Soporta modo incremental y modo de reescritura total.
 
+## 📂 Archivos y Activos
+
+Lógica: src/agents/RegistradorCommitSkill.js
+
+Documentación: .agent/skills/RegistradorCommit.md
+
+Test: src/agents/test-RegistradorCommit.js
+
+Dependencias: [Ninguna especial]
+
 ## 🧠 Cuándo aplicar (Trigger)
 - Cuando el usuario solicite registrar, guardar o actualizar la bitácora de commits.
 - Cuando se pida extraer el último mensaje de commit de Git o generar el historial completo.

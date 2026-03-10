@@ -1,5 +1,22 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: a75acb3] | 9/3/2026, 8:30:14 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+  - Añade función: regla()
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: 🧠 Cuándo aplicar (Trigger)
+  - Añade sección: ⚙️ Cómo aplicar (Payload)
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: Skill: doc-expert
+  - Añade sección: 📂 Archivos y Activos
+  - Añade sección: 🧠 Cuándo aplicar (Trigger)
+  - Añade sección: ⚙️ Cómo aplicar (Payload)
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, .agent/skills/doc-expert.md, src/agents/SkillFactory.js
+
+---
 ## 🛠️ [ID: d9c4844] | 9/3/2026, 8:23:13 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**

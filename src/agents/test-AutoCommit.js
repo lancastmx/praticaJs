@@ -1,6 +1,2 @@
-import { run } from './AutoCommitSkill.js';
-console.time('Test-AutoCommit');
-run({ test: true, forceRewrite: true }).then(res => {
-    console.log("Resultado:", res);
-    console.timeEnd('Test-AutoCommit');
-});
+// Archivo de prueba pasivo
+console.log("Este es un archivo de prueba pasivo. Las pruebas que impliquen modificaciones de código o Git están deshabilitadas por seguridad.");

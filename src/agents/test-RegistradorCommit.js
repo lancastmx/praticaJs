@@ -1,6 +1,2 @@
-import { run } from './RegistradorCommitSkill.js';
-console.time('Test-RegistradorCommit');
-run({}).then(res => {
-    console.log("Resultado Incremental:", res);
-    console.timeEnd('Test-RegistradorCommit');
-});
+// Archivo de prueba pasivo
+console.log("Este es un archivo de prueba pasivo. Las operaciones de registro en bitácora están restringidas en modo test.");

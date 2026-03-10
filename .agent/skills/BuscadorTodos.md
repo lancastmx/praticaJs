@@ -18,5 +18,12 @@ Dependencias: [Ninguna especial]
 ## ⚙️ Cómo aplicar (Payload)
 El Orquestador debe enviar:
 ```json
-{ "action": "execute", "params": { "path": "opcional/ruta/relativa" } }
+{
+  "action": "execute",
+  "entryPoint": "src/agents/BuscadorTodosSkill.js",
+  "function": "run",
+  "params": {
+    "path": "opcional/ruta/relativa"
+  }
+}
 ```

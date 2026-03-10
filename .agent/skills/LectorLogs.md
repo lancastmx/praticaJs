@@ -17,5 +17,10 @@ Dependencias: [Ninguna especial]
 ## ⚙️ Cómo aplicar (Payload)
 El Orquestador debe enviar:
 ```json
-{ "action": "execute", "params": {} }
+{
+  "action": "execute",
+  "entryPoint": "src/agents/LectorLogsSkill.js",
+  "function": "run",
+  "params": {}
+}
 ```

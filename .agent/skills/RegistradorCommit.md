@@ -19,8 +19,20 @@ Dependencias: [Ninguna especial]
 El Orquestador debe enviar:
 ```json
 // Para modo incremental (solo agrega el último commit si no existe)
-{ "action": "execute", "params": {} }
+{
+  "action": "execute",
+  "entryPoint": "src/agents/RegistradorCommitSkill.js",
+  "function": "run",
+  "params": {}
+}
 
 // Para modo reescritura total (borra y regenera toda la bitácora desde Git)
-{ "action": "execute", "params": { "forceRewrite": true } }
+{
+  "action": "execute",
+  "entryPoint": "src/agents/RegistradorCommitSkill.js",
+  "function": "run",
+  "params": {
+    "forceRewrite": true
+  }
+}
 ```

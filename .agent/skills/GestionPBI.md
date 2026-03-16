@@ -13,7 +13,7 @@ Dependencias:
 [Ninguna especial]
 
 ## 🧠 Cuándo aplicar (Trigger)
-- Cuando el usuario solicite explícitamente: "GestionPBI"
+- Cuando el usuario solicite explícitamente: "NuevoPBI"
 - Ante la necesidad de: Automatiza el flujo de ramas: sincroniza main -> dev y crea ramas pbi-[nombre] con un archivo PBI.md inicial.
 
 ## ⚙️ Cómo aplicar (Payload)

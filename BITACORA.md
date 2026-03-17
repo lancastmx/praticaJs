@@ -1,5 +1,12 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: e78c379861e885581b814e49d59b4117] | 17/3/2026, 9:39:43 a.m.
+- **Autor:** lancast
+- **Cambios Técnicos:**
+> feat(lessons): add multiplication function and update lessons
+- **Archivos:** Ninguno
+
+---
 ## 🛠️ [ID: 57cb346] | 16/3/2026, 1:39:57 p.m.
 - **Autor:** lancast
 - **Cambios Técnicos:**

@@ -1,5 +1,18 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: 164dadd] | 19/3/2026, 2:03:27 p.m.
+- **Autor:** lancast
+- **Cambios Técnicos:**
+> docs(skills): evolucionar a Estratega de Versiones y micro-agrupacion de diffs
+> 
+> Why: Necesidad de trazabilidad quirurgica y atomicidad en los commits para facilitar futuros reverts e inspeccion tecnica.
+> How:
+>  - Inyecta diffsByFile en AutoCommitSkill.js para exponer diffs individuales por archivo.
+>  - Redefine la identidad en AutoCommit.md con un enfoque analitico (Why/How/Impact).
+> Impact: Permite al agente sugerir fragmentacion de commits y documentar la intención tecnica detras de cada decisión de arquitectura.
+- **Archivos:** .agent/skills/AutoCommit.md, agents/AutoCommitSkill.js
+
+---
 ## 🛠️ [ID: 46d3af5] | 19/3/2026, 1:53:22 p.m.
 - **Autor:** lancast
 - **Cambios Técnicos:**

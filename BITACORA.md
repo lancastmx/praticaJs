@@ -1,5 +1,15 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
+## 🛠️ [ID: 48098b9] | 19/3/2026, 1:35:52 p.m.
+- **Autor:** lancast
+- **Cambios Técnicos:**
+> docs(skills): actualizar protocolo de ejecucion directa para AutoCommit
+> 
+> - Establece reglas imperativas para eliminar la fase de planificacion y comunicacion redundante.
+> - Limpia archivos temporales detectados en el repositorio.
+- **Archivos:** .agent/skills/AutoCommit.md, tmp_diff.json, tmp_diff.txt, tmp_diff_full.txt, tmp_full_diff.patch
+
+---
 ## 🛠️ [ID: fa46c83] | 19/3/2026, 1:25:34 p.m.
 - **Autor:** lancast
 - **Cambios Técnicos:**

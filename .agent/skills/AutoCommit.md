@@ -1,16 +1,13 @@
-# Skill: AutoCommit
-> Prepara staging (`git add .`), captura el `git diff --cached` y lo devuelve como string para que el agente del IDE genere la narrativa del commit.
+# Skill: AutoCommit (MODO EJECUCIÓN DIRECTA)
+> ESTADO: CRÍTICO. Ejecución obligatoria sin rodeos.
 
 ## 📂 Archivos y Activos
-
 Lógica: `agents/AutoCommitSkill.js`
 
 Documentación: `.agent/skills/AutoCommit.md`
 
-Dependencias: Ninguna. El agente del IDE asume el rol de generar el mensaje.
-
 ## 🧠 Cuándo aplicar (Trigger)
-- Cuando el usuario solicite: "Commit", "agrega commit", "haz commit" o "crea commit"
+"Commit", "haz commit", "agrega commit".
 
 ## ⚙️ Cómo aplicar (Payload)
 ```json
@@ -22,18 +19,18 @@ Dependencias: Ninguna. El agente del IDE asume el rol de generar el mensaje.
 }
 ```
 
-## 📋 Flujo completo (Agente del IDE)
+## 📋 Protocolo de Ejecución (PROHIBIDO PLANIFICAR)
+1. **ACCION 1 (Inmediata)**: Al recibir el trigger, ejecuta `node agents/AutoCommitSkill.js` SIN PEDIR PERMISO ni redactar planes.
+2. **ACCION 2 (Narrativa)**: Con el diff recibido, genera el mensaje (Conventional Commits).
+3. **ACCION 3 (Confirmación única)**: Muestra el mensaje y pregunta: "¿Aplico este commit? (S/N)".
+4. **ACCION 4 (Ráfaga de cierre)**: Si el usuario dice "S" o "SÍ", ejecuta en una sola secuencia de terminal:
+   - `git commit -m "[mensaje]"`
+   - `node agents/RegistradorCommitSkill.js` (usando los datos del commit recién hecho).
+   - `git add BITACORA.md && git commit --amend --no-edit`
 
-1. **Ejecutar skill** → devuelve `{ diff, stagingFiles }`
-2. **Agente lee el diff** y genera un mensaje de commit en Conventional Commits
-3. **Agente pregunta** al usuario si desea aplicarlo
-4. **Si el usuario dice SÍ**, el agente ejecuta:
-   ```bash
-   git commit -m "[narrativa generada]"
-   ```
-5. **Agente llama a `RegistradorCommitSkill`** pasando el hash, autor y narrativa para insertar en `BITACORA.md` en la sección "Cambios Técnicos"
-6. **Agente cierra el ciclo:**
-   ```bash
-   git add BITACORA.md
-   git commit --amend --no-edit
-   ```
+**FIN**: Informa: "Commit y BITACORA actualizados con éxito."
+
+## 🚫 REGLAS ANTI-BUCLE
+- **PROHIBIDO** crear archivos `tmp_diff.txt` o similares fuera de la lógica del script.
+- **PROHIBIDO** proponer "Planes de Implementación" o "Planes de Verificación".
+- **PROHIBIDO** analizar el `.gitignore` o archivos temporales. Si hay basura, el script `AutoCommitSkill.js` debe manejarla o ignorarla.

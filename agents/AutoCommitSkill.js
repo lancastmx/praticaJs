@@ -1,4 +1,5 @@
 import { execSync } from 'child_process';
+import path from 'path';
 
 const EXCLUDE = ['BITACORA.md'];
 
@@ -47,3 +48,13 @@ export const run = async (payload = {}) => {
         return { success: false, error: error.message };
     }
 };
+
+// ── CLI Entry Point ───────────────────────────────────────────────────────
+if (import.meta.url === `file://${path.resolve(process.argv[1]).replace(/\\/g, '/')}`) {
+    run().then(res => {
+        if (!res.success) {
+            console.error('❌ Error:', res.error);
+            process.exit(1);
+        }
+    });
+}

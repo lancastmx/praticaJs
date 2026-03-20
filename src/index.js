@@ -13,6 +13,7 @@ const lecciones = [
     { id: "11", ruta: "./lecciones/11-function.js" },
     { id: "12", ruta: "./lecciones/12-scope.js" },
     { id: "13", ruta: "./lecciones/13-closure.js" },
+    { id: "14", ruta: "./lecciones/14-arrays.js" },
     { id: "salir", ruta: null }
 ];
 

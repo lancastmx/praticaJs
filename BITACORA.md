@@ -1,560 +1,408 @@
 # 📓 BITÁCORA DE INGENIERÍA
 
-## 🛠️ [ID: 164dadd] | 19/3/2026, 2:03:27 p.m.
-- **Autor:** lancast
+## 🛠️ [ID: 56db80a] | 20/3/2026, 9:47:05 a.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: add Arrays lesson to main menu and README
+- **Archivos:** BITACORA.md, README.md, agents/AutoCommitSkill.js, agents/RegistradorCommitSkill.js, debug-bitacora.js, src/index.js, src/lecciones/14-arrays.js
+
+---
+## 🛠️ [ID: 8b75797] | 19/3/2026, 2:03:26 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > docs(skills): evolucionar a Estratega de Versiones y micro-agrupacion de diffs
-> 
-> Why: Necesidad de trazabilidad quirurgica y atomicidad en los commits para facilitar futuros reverts e inspeccion tecnica.
-> How:
->  - Inyecta diffsByFile en AutoCommitSkill.js para exponer diffs individuales por archivo.
->  - Redefine la identidad en AutoCommit.md con un enfoque analitico (Why/How/Impact).
-> Impact: Permite al agente sugerir fragmentacion de commits y documentar la intención tecnica detras de cada decisión de arquitectura.
-- **Archivos:** .agent/skills/AutoCommit.md, agents/AutoCommitSkill.js
+- **Archivos:** .agent/skills/AutoCommit.md, BITACORA.md, agents/AutoCommitSkill.js
 
 ---
-## 🛠️ [ID: 46d3af5] | 19/3/2026, 1:53:22 p.m.
-- **Autor:** lancast
+## 🛠️ [ID: 6c1618a] | 19/3/2026, 1:53:22 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > docs(skills): inyectar identidad Senior Git Architect y logica de atonalidad en commits
-> 
-> - Actualiza .agent/skills/AutoCommit.md con el nuevo protocolo de ejecucion directa y analitica de diffs.
-> - Añade deteccion de diffs masivos (>50 lineas o >3 archivos) en agents/AutoCommitSkill.js para sugerir commits atomicos.
-> - Adopta el rol de Senior Fullstack para una gestion tecnica impecable del repositorio centrada en la calidad y el analisis del por que.
-- **Archivos:** .agent/skills/AutoCommit.md, agents/AutoCommitSkill.js
+- **Archivos:** .agent/skills/AutoCommit.md, BITACORA.md, agents/AutoCommitSkill.js
 
 ---
-## 🛠️ [ID: 48098b9] | 19/3/2026, 1:35:52 p.m.
-- **Autor:** lancast
+## 🛠️ [ID: d5efacc] | 19/3/2026, 1:35:41 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > docs(skills): actualizar protocolo de ejecucion directa para AutoCommit
-> 
-> - Establece reglas imperativas para eliminar la fase de planificacion y comunicacion redundante.
-> - Limpia archivos temporales detectados en el repositorio.
-- **Archivos:** .agent/skills/AutoCommit.md, tmp_diff.json, tmp_diff.txt, tmp_diff_full.txt, tmp_full_diff.patch
+- **Archivos:** .agent/skills/AutoCommit.md, BITACORA.md, agents/test-AutoCommit.js, agents/test-BuscadorTodos.js, agents/test-CerrarPBI.js, agents/test-GestionPBI.js, agents/test-NarrativaCommit.js, agents/test-RegistradorCommit.js, tmp_diff.json, tmp_diff.txt, tmp_diff_full.txt, tmp_full_diff.patch
 
 ---
-## 🛠️ [ID: fa46c83] | 19/3/2026, 1:25:34 p.m.
-- **Autor:** lancast
+## 🛠️ [ID: 63129ab] | 19/3/2026, 1:24:58 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > fix(agents): corregir concatenacion de rutas y normalizar prefijo de agentes
-> 
-> - Corrige rutas relativas de ../../ a ../ en SkillFactory.js y BuscadorTodosSkill.js.
-> - Elimina el prefijo inexistente src/ en AGENTS.md y en las reglas generadas por SkillFactory.js.
-> - Asegura que los entryPoints apunten correctamente a la carpeta agents/.
-- **Archivos:** AGENTS.md, agents/SkillFactory.js, agents/BuscadorTodosSkill.js
+- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, BITACORA.md, agents/BuscadorTodosSkill.js, agents/SkillFactory.js, src/index.js, src/lecciones/11-function.js, src/lecciones/12-scope.js, src/lecciones/13-closure.js, tmp_diff.json, tmp_diff.txt, tmp_diff_full.txt, tmp_full_diff.patch
 
 ---
+## 🛠️ [ID: 7f93257] | 17/3/2026, 9:42:38 a.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> fallo el auto commit
+- **Archivos:** tmp_run_commit.js
 
-
-## 🛠️ [ID: e78c379861e885581b814e49d59b4117] | 17/3/2026, 9:39:43 a.m.
-- **Autor:** lancast
+---
+## 🛠️ [ID: ecd10f4] | 17/3/2026, 9:39:24 a.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > feat(lessons): add multiplication function and update lessons
-- **Archivos:** Ninguno
+- **Archivos:** BITACORA.md, src/index.js, src/lecciones/11-funtion.js, tmp_run_commit.js
 
 ---
-## 🛠️ [ID: 57cb346] | 16/3/2026, 1:39:57 p.m.
-- **Autor:** lancast
+## 🛠️ [ID: 63d4436] | 16/3/2026, 1:39:54 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > feat(index): await ejecutaRun call
-- **Archivos:** src/index.js, src/lecciones/10-for-while.js
+- **Archivos:** BITACORA.md, src/index.js, src/lecciones/10-for-while.js
 
 ---
-
-
-## 🛠️ [ID: 74dc89b] | 16/3/2026, 11:59:59 a.m.
-- **Autor:** lancast
+## 🛠️ [ID: be13116] | 16/3/2026, 12:03:07 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > fix(agents): corregir RegistradorCommitSkill para preservar mensaje de commit integro
-> 
-> - Usa git log -1 --pretty=%B para capturar el mensaje completo sin alterar
-> - Formatea cada linea del mensaje como blockquote markdown (> ) en BITACORA.md
-> - Elimina la logica de vinetas forzadas y division por saltos de linea
-> - hash y autor ahora se obtienen de git directamente si no se pasan como parametro
-> - Extrae la logica del bloque a la funcion auxiliar _bloque() para reutilizacion
-- **Archivos:** agents/RegistradorCommitSkill.js, BITACORA.md
+- **Archivos:** 
 
 ---
-## 🛠️ [ID: 2953b5b] | 16/3/2026, 11:57:02 a.m.
-- **Autor:** lancast
+## 🛠️ [ID: a88b56b] | 16/3/2026, 11:59:49 a.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> fix(agents): corregir RegistradorCommitSkill para preservar mensaje de commit integro
+- **Archivos:** BITACORA.md, agents/RegistradorCommitSkill.js
+
+---
+## 🛠️ [ID: 2953b5b] | 16/3/2026, 11:51:52 a.m.
+- **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
 > refactor(agents): simplificar flujo de commit eliminando patron de archivo temp
-> 
-> - AutoCommitSkill ahora solo hace git add + git diff --cached y devuelve el diff como string
-> - NarrativaCommitSkill convertida en stub deprecado; la narrativa la genera el agente del IDE
-> - Actualiza AutoCommit.md con flujo completo: diff -> narrativa -> commit -> BITACORA -> amend
-> - Marca NarrativaCommit.md como deprecada
-- **Archivos:** .agent/skills/AutoCommit.md, agents/AutoCommitSkill.js, agents/NarrativaCommitSkill.js
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/NarrativaCommit.md, .agent/temp/PROMPT_COMMIT.md, BITACORA.md, agents/AutoCommitSkill.js, agents/NarrativaCommitSkill.js
 
 ---
-## 🛠️ [ID: 43bd533] | 16/3/2026, 11:52:12 a.m.
-- **Autor:** lancast
-- **Cambios Técnicos:**
-  - AutoCommitSkill: ahora solo hace git add + git diff --cached y retorna el diff como string
-  - NarrativaCommitSkill: convertida en stub deprecado
-  - AutoCommit.md: flujo completo actualizado (diff -> narrativa -> commit -> BITACORA -> amend)
-  - NarrativaCommit.md: marcada como deprecada
-- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/NarrativaCommit.md, agents/AutoCommitSkill.js, agents/NarrativaCommitSkill.js
-
----
-## 🛠️ [ID: 13eae55] | 16/3/2026, 11:30:59 a.m.
-- **Autor:** lancast
-- **Cambios Técnicos:**
-  - Añade NarrativaCommitSkill.run()
-- Refactoriza AutoCommitSkill.run()
-  - Añade NarrativaCommit.md
-- Actualiza AutoCommit.md
-- **Archivos:** agents/AutoCommitSkill.js, agents/NarrativaCommitSkill.js, .agent/skills/AutoCommit.md, .agent/skills/NarrativaCommit.md, AGENTS.md, src/index.js, src/lecciones/10-for-while.js
-
----
-## 🛠️ [ID: a3949ab] | 16/3/2026, 10:59:47 a.m.
+## 🛠️ [ID: 13eae55] | 16/3/2026, 11:30:41 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Añade sección: PBI: narrativa-commit-skill
-  - Añade sección: Contexto
-  - Añade sección: Alcance
-- **Archivos:** PBI.md, run-nuevoPBI.mjs
+> feat(agents): integrar NarrativaCommit como motor del flujo de commit
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/NarrativaCommit.md, .agent/temp/PROMPT_COMMIT.md, AGENTS.md, agents/AutoCommitSkill.js, agents/NarrativaCommitSkill.js, agents/SkillFactory.js, agents/test-NarrativaCommit.js, run-nuevoPBI.mjs, src/index.js, src/lecciones/10-for-while.js
 
 ---
-
-
-## 🛠️ [ID: dbb9976] | 16/3/2026, 10:57:21 a.m.
+## 🛠️ [ID: 5ff6dce] | 16/3/2026, 10:59:47 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/GestionPBI.md, AGENTS.md
+> feat: Actualización en PBI.md, run-nuevoPBI.mjs
+- **Archivos:** BITACORA.md, PBI.md, run-nuevoPBI.mjs
 
 ---
-## 🛠️ [ID: 64fa88b] | 16/3/2026, 10:53:28 a.m.
+## 🛠️ [ID: 41f3e2e] | 16/3/2026, 10:57:21 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/AutoCommit.md
+> feat: Actualización en .agent/skills/GestionPBI.md, AGENTS.md
+- **Archivos:** .agent/skills/GestionPBI.md, AGENTS.md, BITACORA.md
 
 ---
-## 🛠️ [ID: 0442efc] | 16/3/2026, 10:37:41 a.m.
+## 🛠️ [ID: a59d30e] | 16/3/2026, 10:53:28 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: dia()
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, src/lecciones/09-switch.js
+> feat: Actualización en .agent/skills/AutoCommit.md
+- **Archivos:** .agent/skills/AutoCommit.md, BITACORA.md
 
 ---
-
-
-## 🛠️ [ID: 003f09f] | 10/3/2026, 10:47:49 a.m.
+## 🛠️ [ID: b3f4efc] | 16/3/2026, 10:37:41 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** run-autocommit.js
+> feat: Actualización en .agent/skills/AutoCommit.md, AGENTS.md y otros
+- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, BITACORA.md, src/lecciones/09-switch.js
 
 ---
-## 🛠️ [ID: aaca03c] | 10/3/2026, 10:12:56 a.m.
+## 🛠️ [ID: 45a9fdf] | 16/3/2026, 9:38:38 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: EXCLUDE()
-  - Añade función: run()
-  - Añade función: stagingFilesRaw()
-  - Añade función: stagingFiles()
-  - Añade función: ext()
-  - Añade función: diff()
-  - Añade función: lineasAnadidas()
-  - Añade función: regexFunciones()
-  - Añade función: match()
-  - Añade función: regexTitulos()
-  - Añade función: match()
-  - Añade función: funcionesStr()
-  - Añade función: mdStr()
-  - Añade función: mensajeCommit()
-  - Añade función: autor()
-  - Añade función: commitHash()
-  - Añade función: hashFinal()
-  - Añade función: IGNORED_DIRS()
-  - Añade función: ALLOWED_EXTS()
-  - Añade función: __filename()
-  - Añade función: mdPath()
-  - Añade función: mdContent()
-  - Añade función: filesSection()
-  - Añade función: paths()
-  - Añade función: fileBase()
-  - Añade función: files()
-  - Añade función: fullPath()
-  - Añade función: ext()
-  - Añade función: content()
-  - Añade función: lines()
-  - Añade función: run()
-  - Añade función: cwd()
-  - Añade función: searchPath()
-  - Añade función: excludedFiles()
-  - Añade función: todos()
-  - Añade función: pTodos()
-  - Añade función: outputLines()
-  - Añade función: run()
-  - Añade función: currentBranch()
-  - Añade función: autoCommitResult()
-  - Añade función: lastCommitMsg()
-  - Añade función: safeMessage()
-  - Añade función: run()
-  - Añade función: nombre()
-  - Añade función: descripcion()
-  - Añade función: ramaPBI()
-  - Añade función: pbiPath()
-  - Añade función: pbiContent()
-  - Añade función: commitResult()
-  - Añade función: run()
-  - Añade función: fileName()
-  - Añade función: filePath()
-  - Añade función: data()
-  - Añade función: run()
-  - Añade función: bitacoraPath()
-  - Añade función: tituloPrincipal()
-  - Añade función: logOut()
-  - Añade función: commits()
-  - Añade función: partes()
-  - Añade función: fecha()
-  - Añade función: filesOut()
-  - Añade función: bloque()
-  - Añade función: fecha()
-  - Añade función: hash()
-  - Añade función: autor()
-  - Añade función: listaDeFuncionesDetectadas()
-  - Añade función: seccionesMarkdownNuevas()
-  - Añade función: listaArchivos()
-  - Añade función: bloque()
-  - Añade función: __dirname()
-  - Añade función: agentsPath()
-  - Añade función: skillName()
-  - Añade función: description()
-  - Añade función: createSkill()
-  - Añade función: paths()
-  - Añade función: depRegex()
-  - Añade función: depJsPath()
-  - Añade función: mdContent()
-  - Añade función: testContent()
-  - Añade función: regla()
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md, .agent/skills/CerrarPBI.md, .agent/skills/GestionPBI.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, .agent/skills/doc-expert.md, agents/AutoCommitSkill.js, agents/BuscadorTodosSkill.js, agents/CerrarPBISkill.js, agents/GestionPBISkill.js, agents/LectorLogsSkill.js, agents/RegistradorCommitSkill.js, agents/SkillFactory.js, agents/test-AutoCommit.js, agents/test-BuscadorTodos.js, agents/test-CerrarPBI.js, agents/test-GestionPBI.js, agents/test-RegistradorCommit.js, run-autocommit.js, src/test.js
+> delet: status.txt
+- **Archivos:** .git_status_tmp.txt
 
 ---
-
-
-## 🛠️ [ID: b1fe7f8] | 9/3/2026, 10:53:44 p.m.
+## 🛠️ [ID: 53ce329] | 12/3/2026, 11:31:59 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: run()
-  - Añade función: currentBranch()
-  - Añade función: autoCommitResult()
-  - Añade función: lastCommitMsg()
-  - Añade función: safeMessage()
-  - Añade sección: Skill: CerrarPBI
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 🧠 Cuándo aplicar (Trigger)
-  - Añade sección: ⚙️ Cómo aplicar (Payload)
-  - Añade sección: 📋 Flujo Técnico
-- **Archivos:** .agent/skills/CerrarPBI.md, AGENTS.md, src/agents/CerrarPBISkill.js, src/agents/test-CerrarPBI.js
+> feat: leeciones
+- **Archivos:** src/index.js, src/lecciones/01-vars.js, src/lecciones/07-log.js, src/lecciones/08-if-else.js, src/lecciones/09-switch.js
 
 ---
-## 🛠️ [ID: 496a959] | 9/3/2026, 10:25:08 p.m.
+## 🛠️ [ID: 5cce1ef] | 12/3/2026, 10:11:43 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
+> feat index de ejecucion
+- **Archivos:** .gitignore, package-lock.json, package.json, src/07-log.js, src/08-if-else.js, src/index.js
 
 ---
-## 🛠️ [ID: 0b7b761] | 9/3/2026, 10:24:29 p.m.
+## 🛠️ [ID: 6fbebd1] | 12/3/2026, 12:51:54 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Añade sección: PBI: git-flow-automation
-  - Añade sección: Descripción
-  - Añade sección: Tareas
-- **Archivos:** PBI.md
+> push basico
+- **Archivos:** src/07.logig.js
 
 ---
-
-
-## 🛠️ [ID: 73c269f] | 9/3/2026, 10:13:33 p.m.
+## 🛠️ [ID: f2d8979] | 11/3/2026, 9:41:22 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: run()
-  - Añade función: nombre()
-  - Añade función: descripcion()
-  - Añade función: ramaPBI()
-  - Añade función: pbiPath()
-  - Añade función: pbiContent()
-  - Añade función: commitResult()
-  - Añade sección: Skill: GestionPBI
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 🧠 Cuándo aplicar (Trigger)
-  - Añade sección: ⚙️ Cómo aplicar (Payload)
-- **Archivos:** .agent/skills/GestionPBI.md, AGENTS.md, src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
+> chore: add placeholder for 01-vars.js practice file
+- **Archivos:** src/01-vars.js
 
 ---
-## 🛠️ [ID: 6b9af90] | 9/3/2026, 9:04:38 p.m.
+## 🛠️ [ID: 0ef4064] | 10/3/2026, 10:47:49 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, src/agents/test-AutoCommit.js, src/agents/test-BuscadorTodos.js, src/agents/test-RegistradorCommit.js
+> feat: Actualización en run-autocommit.js
+- **Archivos:** BITACORA.md, run-autocommit.js
 
 ---
-## 🛠️ [ID: b0777b1] | 9/3/2026, 8:59:03 p.m.
+## 🛠️ [ID: 6cdd53f] | 10/3/2026, 10:12:56 a.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Añade sección: 🔒 Workflow de Seguridad
-- **Archivos:** .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md, src/agents/SkillFactory.js
+> feat: Actualización en .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md y otros
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md, .agent/skills/CerrarPBI.md, .agent/skills/GestionPBI.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, .agent/skills/doc-expert.md, BITACORA.md, agents/AutoCommitSkill.js, agents/BuscadorTodosSkill.js, agents/CerrarPBISkill.js, agents/GestionPBISkill.js, agents/LectorLogsSkill.js, agents/RegistradorCommitSkill.js, agents/SkillFactory.js, agents/test-AutoCommit.js, agents/test-BuscadorTodos.js, agents/test-CerrarPBI.js, agents/test-GestionPBI.js, agents/test-RegistradorCommit.js, run-autocommit.js, src/test.js
 
 ---
-## 🛠️ [ID: b91b42b] | 9/3/2026, 8:55:22 p.m.
+## 🛠️ [ID: 6459270] | 9/3/2026, 10:53:45 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, src/agents/SkillFactory.js
+> feat: Actualización en .agent/skills/CerrarPBI.md, AGENTS.md y otros
+- **Archivos:** 
 
 ---
-## 🛠️ [ID: 7915ef2] | 9/3/2026, 8:51:22 p.m.
+## 🛠️ [ID: 9d94190] | 9/3/2026, 10:53:44 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Sin nuevas funciones detectadas
-  - Sin nuevas secciones Markdown
-- **Archivos:** .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md
+> feat: Actualización en .agent/skills/CerrarPBI.md, AGENTS.md y otros
+- **Archivos:** .agent/skills/CerrarPBI.md, AGENTS.md, BITACORA.md, src/agents/CerrarPBISkill.js, src/agents/test-CerrarPBI.js
 
 ---
-## 🛠️ [ID: b50ce42] | 9/3/2026, 8:47:05 p.m.
+## 🛠️ [ID: 1229e9e] | 9/3/2026, 10:25:07 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: __filename()
-  - Añade función: mdPath()
-  - Añade función: mdContent()
-  - Añade función: filesSection()
-  - Añade función: paths()
-  - Añade función: fileBase()
-  - Añade función: excludedFiles()
-  - Añade función: todos()
-  - Añade función: pTodos()
-  - Añade función: outputLines()
-  - Añade función: depRegex()
-  - Añade función: depJsPath()
-  - Añade función: regla()
-  - Añade sección: 🛡️ Validación de Integridad
-- **Archivos:** .agent/workflows/verify-skills.md, AGENTS.md, src/agents/BuscadorTodosSkill.js, src/agents/SkillFactory.js
+> feat: Actualización en src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
+- **Archivos:** BITACORA.md, src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
 
 ---
-## 🛠️ [ID: a75acb3] | 9/3/2026, 8:30:14 p.m.
+## 🛠️ [ID: a239a34] | 9/3/2026, 10:24:29 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: regla()
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 🧠 Cuándo aplicar (Trigger)
-  - Añade sección: ⚙️ Cómo aplicar (Payload)
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: Skill: doc-expert
-  - Añade sección: 📂 Archivos y Activos
-  - Añade sección: 🧠 Cuándo aplicar (Trigger)
-  - Añade sección: ⚙️ Cómo aplicar (Payload)
-- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, .agent/skills/doc-expert.md, src/agents/SkillFactory.js
+> feat: Actualización en PBI.md
+- **Archivos:** BITACORA.md, PBI.md
 
 ---
-## 🛠️ [ID: d9c4844] | 9/3/2026, 8:23:13 p.m.
+## 🛠️ [ID: 9a2087a] | 9/3/2026, 10:13:33 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: regla()
-  - Sin nuevas secciones Markdown
-- **Archivos:** AGENTS.md, src/agents/SkillFactory.js
+> feat: Actualización en .agent/skills/GestionPBI.md, AGENTS.md y otros
+- **Archivos:** .agent/skills/GestionPBI.md, AGENTS.md, BITACORA.md, src/agents/GestionPBISkill.js, src/agents/test-GestionPBI.js
 
 ---
-## 🛠️ [ID: ff23bf7] | 9/3/2026, 8:00:10 p.m.
+## 🛠️ [ID: 3a602b2] | 9/3/2026, 9:04:38 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade función: commitHash()
-  - Añade función: hashFinal()
-  - Sin nuevas secciones Markdown
-- **Archivos:** src/agents/AutoCommitSkill.js
+> feat: Actualización en .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md y otros
+- **Archivos:** .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, BITACORA.md, src/agents/test-AutoCommit.js, src/agents/test-BuscadorTodos.js, src/agents/test-RegistradorCommit.js
 
 ---
-## 🛠️ [ID: PENDIENTE] | 9/3/2026, 7:53:39 p.m.
+## 🛠️ [ID: c1ebd1e] | 9/3/2026, 8:59:03 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - En `src/agents/AutoCommitSkill.js`: `EXCLUDE`
-  - En `src/agents/AutoCommitSkill.js`: `stagingFilesRaw`
-  - En `src/agents/AutoCommitSkill.js`: `stagingFiles`
-  - En `src/agents/AutoCommitSkill.js`: `diff`
-  - En `src/agents/AutoCommitSkill.js`: `lineasAnadidas`
-  - En `src/agents/AutoCommitSkill.js`: `regexFunciones`
-  - En `src/agents/AutoCommitSkill.js`: `match`
-  - En `src/agents/AutoCommitSkill.js`: `regexTitulos`
-  - En `src/agents/AutoCommitSkill.js`: `match`
-  - En `src/agents/AutoCommitSkill.js`: `funcionesStr`
-  - En `src/agents/AutoCommitSkill.js`: `mdStr`
-  - En `src/agents/AutoCommitSkill.js`: `mensajeCommit`
-  - En `src/agents/AutoCommitSkill.js`: `autor`
-  - En `src/agents/AutoCommitSkill.js`: `commitHash`
-  - En `src/agents/RegistradorCommitSkill.js`: `run`
-  - En `src/agents/RegistradorCommitSkill.js`: `tituloPrincipal`
-  - En `src/agents/RegistradorCommitSkill.js`: `logOut`
-  - En `src/agents/RegistradorCommitSkill.js`: `commits`
-  - En `src/agents/RegistradorCommitSkill.js`: `partes`
-  - En `src/agents/RegistradorCommitSkill.js`: `fecha`
-  - En `src/agents/RegistradorCommitSkill.js`: `filesOut`
-  - En `src/agents/RegistradorCommitSkill.js`: `bloque`
-  - En `src/agents/RegistradorCommitSkill.js`: `fecha`
-  - En `src/agents/RegistradorCommitSkill.js`: `hash`
-  - En `src/agents/RegistradorCommitSkill.js`: `autor`
-  - En `src/agents/RegistradorCommitSkill.js`: `listaDeFuncionesDetectadas`
-  - En `src/agents/RegistradorCommitSkill.js`: `seccionesMarkdownNuevas`
-  - En `src/agents/RegistradorCommitSkill.js`: `listaArchivos`
-  - En `src/agents/RegistradorCommitSkill.js`: `bloque`
-  - Sin nuevas secciones Markdown
-- **Archivos:** .git_status_tmp.txt, run_commit.mjs, src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
+> feat: Actualización en .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md y otros
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md, BITACORA.md, src/agents/SkillFactory.js
+
+---
+## 🛠️ [ID: 928b99f] | 9/3/2026, 8:55:21 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en .agent/skills/AutoCommit.md, AGENTS.md y otros
+- **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, BITACORA.md, src/agents/SkillFactory.js
+
+---
+## 🛠️ [ID: d107a65] | 9/3/2026, 8:51:22 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/workflows/verify-skills.md, BITACORA.md
+
+---
+## 🛠️ [ID: 125c290] | 9/3/2026, 8:47:05 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en .agent/workflows/verify-skills.md, AGENTS.md y otros
+- **Archivos:** .agent/workflows/verify-skills.md, AGENTS.md, BITACORA.md, src/agents/BuscadorTodosSkill.js, src/agents/SkillFactory.js
+
+---
+## 🛠️ [ID: e38da7e] | 9/3/2026, 8:30:14 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md y otros
+- **Archivos:** .agent/skills/AutoCommit.md, .agent/skills/BuscadorTodos.md, .agent/skills/LectorLogs.md, .agent/skills/RegistradorCommit.md, .agent/skills/doc-expert.md, BITACORA.md, src/agents/SkillFactory.js
+
+---
+## 🛠️ [ID: 5e34aa7] | 9/3/2026, 8:23:13 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en AGENTS.md, src/agents/SkillFactory.js
+- **Archivos:** AGENTS.md, BITACORA.md, src/agents/SkillFactory.js
+
+---
+## 🛠️ [ID: b37c8a0] | 9/3/2026, 8:01:40 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> fix dela run_commit
+- **Archivos:** run_commit.mjs
+
+---
+## 🛠️ [ID: 5f38c17] | 9/3/2026, 8:00:10 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en src/agents/AutoCommitSkill.js
+- **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js
+
+---
+## 🛠️ [ID: 51b70f7] | 9/3/2026, 7:53:39 p.m.
+- **Autor:** lancast <angelprep92@gmail.com>
+- **Cambios Técnicos:**
+> feat: Actualización en .git_status_tmp.txt, run_commit.mjs y otros
+- **Archivos:** .git_status_tmp.txt, BITACORA.md, run_commit.mjs, src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
 ---
 ## 🛠️ [ID: e598738] | 9/3/2026, 7:46:53 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - feat: src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
+> feat: src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 - **Archivos:** src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
 ---
 ## 🛠️ [ID: e3734ac] | 9/3/2026, 7:29:24 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Añade logs en AutoCommitSkill.js; Añade logs en RegistradorCommitSkill.js; actualiza BITACORA.md
+> Añade logs en AutoCommitSkill.js; Añade logs en RegistradorCommitSkill.js; actualiza BITACORA.md
 - **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/RegistradorCommitSkill.js
 
 ---
 ## 🛠️ [ID: 6c9b208] | 9/3/2026, 7:13:56 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Agrega sección ## [2026-03-09 19:13:30] 
+> Agrega sección ## [2026-03-09 19:13:30] 
 - **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js
 
 ---
 ## 🛠️ [ID: 2dd1972] | 9/3/2026, 7:13:30 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - Agrega sección ## [2026-03-09 19:10:26] 
+> Agrega sección ## [2026-03-09 19:10:26] 
 - **Archivos:** AGENTS.md, BITACORA.md, src/agents/AutoCommitSkill.js
 
 ---
 ## 🛠️ [ID: afd9890] | 9/3/2026, 7:10:26 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js]
+> chore: Añade logs de depuración en [BITACORA.md, RegistradorCommitSkill.js]
 - **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js
 
 ---
 ## 🛠️ [ID: 3c15c00] | 9/3/2026, 7:09:44 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: Añade logs de depuración en [BITACORA.md, AutoCommitSkill.js]
+> chore: Añade logs de depuración en [BITACORA.md, AutoCommitSkill.js]
 - **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js
 
 ---
 ## 🛠️ [ID: 6d9e945] | 9/3/2026, 7:06:19 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fix: [BITACORA.md, AutoCommitSkill.js, test-AutoCommit.js] y cambios relacionados
+> fix: [BITACORA.md, AutoCommitSkill.js, test-AutoCommit.js] y cambios relacionados
 - **Archivos:** BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/test-AutoCommit.js
 
 ---
 ## 🛠️ [ID: c3da695] | 9/3/2026, 7:02:09 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: actualización automática
+> chore: actualización automática
 - **Archivos:** BITACORA.md, README.md, src/agents/AutoCommitSkill.js
 
 ---
 ## 🛠️ [ID: a2ae165] | 9/3/2026, 6:59:26 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: actualización automática
+> chore: actualización automática
 - **Archivos:** AGENTS.md
 
 ---
 ## 🛠️ [ID: eff75e3] | 9/3/2026, 6:56:50 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - se le escapo 1
+> se le escapo 1
 - **Archivos:** BITACORA.md
 
 ---
 ## 🛠️ [ID: fe61e7c] | 9/3/2026, 6:56:02 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: actualización automática
+> chore: actualización automática
 - **Archivos:** BITACORA.md
 
 ---
 ## 🛠️ [ID: 80efdc9] | 9/3/2026, 6:53:19 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - chore: actualización automática
+> chore: actualización automática
 - **Archivos:** .agent/skills/AutoCommit.md, AGENTS.md, BITACORA.md, src/agents/AutoCommitSkill.js, src/agents/test-AutoCommit.js
 
 ---
 ## 🛠️ [ID: 8eda5ae] | 9/3/2026, 6:40:24 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fix: ajuste en el formato de bitacora
+> fix: ajuste en el formato de bitacora
 - **Archivos:** BITACORA.md, src/agents/RegistradorCommitSkill.js, src/agents/SkillFactory.js
 
 ---
 ## 🛠️ [ID: 53652c4] | 9/3/2026, 6:28:52 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fix: rutas directas de skill
+> fix: rutas directas de skill
 - **Archivos:** AGENTS.md, src/agents/SkillFactory.js
 
 ---
 ## 🛠️ [ID: 7c584cd] | 9/3/2026, 6:23:17 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - feat: Bitagora de commit
+> feat: Bitagora de commit
 - **Archivos:** .agent/skills/RegistradorCommit.md, AGENTS.md, BITACORA.md, src/agents/RegistradorCommitSkill.js, src/agents/test-RegistradorCommit.js
 
 ---
 ## 🛠️ [ID: 304dfe2] | 9/3/2026, 5:57:27 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fead: new skill listar TODO
+> fead: new skill listar TODO
 - **Archivos:** .agent/skills/BuscadorTodos.md, AGENTS.md, TODOS.md, src/agents/BuscadorTodosSkill.js, src/agents/SkillFactory.js, src/agents/test-BuscadorTodos.js, src/index.js, src/test.js
 
 ---
 ## 🛠️ [ID: d0d0680] | 9/3/2026, 5:39:05 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fix: rutas y logica de los skill.
+> fix: rutas y logica de los skill.
 - **Archivos:** .agent/workflows/create-skill.md, src/agents/SkillFactory.js
 
 ---
 ## 🛠️ [ID: 3ab9031] | 9/3/2026, 5:22:31 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - fix: rutas y logica del lector de consol.log
+> fix: rutas y logica del lector de consol.log
 - **Archivos:** src/agents/LectorLogsSkill.js, src/agents/SkillFactory.js
 
 ---
 ## 🛠️ [ID: 0cf4ba2] | 9/3/2026, 5:14:23 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - feat: add creat skill
+> feat: add creat skill
 - **Archivos:** .agent/skills/LectorLogs.md, .agent/skills/doc-expert.md, .agent/workflows/create-skill.md, .agent/workflows/verify-skills.md, AGENTS.md, src/agents/LectorLogsSkill.js, src/agents/SkillFactory.js, src/index.js
 
 ---
 ## 🛠️ [ID: 75951be] | 8/3/2026, 2:39:18 p.m.
 - **Autor:** lancast <angelprep92@gmail.com>
 - **Cambios Técnicos:**
-  - feat: init
+> feat: init
 - **Archivos:** package.json
 
 ---

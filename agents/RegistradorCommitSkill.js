@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
 
 export const run = async (data = {}) => {
@@ -61,7 +62,7 @@ export const run = async (data = {}) => {
         }
 
         const nuevoContenido = contenidoActual.replace(
-            /# 📓 BITÁCORA DE INGENIERÍA\n*/,
+            /# 📓 BITÁCORA DE INGENIERÍA[\s\S]*?\r?\n/,
             tituloPrincipal + bloque
         );
 
@@ -96,3 +97,18 @@ ${blockquote}
 ---
 `;
 }
+
+// ── CLI Entry Point ───────────────────────────────────────────────────────
+if (process.argv[1] === fileURLToPath(import.meta.url) || path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+    const args = process.argv.slice(2);
+    const forceRewrite = args.includes('--force') || args.includes('-f');
+    
+    run({ forceRewrite }).then(res => {
+        if (!res.success) {
+            console.error('❌ Error:', res.error);
+            process.exit(1);
+        } else {
+            console.log(forceRewrite ? '✅ Historial regenerado con éxito.' : '✅ Bitácora actualizada con éxito.');
+        }
+    });
+}
